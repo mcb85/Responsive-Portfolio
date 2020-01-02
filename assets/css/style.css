@@ -20,7 +20,8 @@ body {
     border-bottom: 1px solid #cccccc;  
     background: #ffffff;
     Height: 100px;
-    width:100%;
+    max-width: 960px:
+    margin: 0 auto;
     z-index: -2;
     font-family: 'Georgia', Times, Times New Roman, serif;
  }
@@ -113,7 +114,6 @@ a {
     margin-top: 40px;
     width: 960px;
     margin-bottom: 80px;
-    /*line-height: 100%;*/
     margin-left: auto;
     margin-right:auto;
     position: relative;
@@ -215,8 +215,7 @@ input [type=submit], #message {
     float: left;
     align-content: left;
     margin-left: 20px;
-    position: relative;
-    overflow: hidden;
+    
 }
     
 
@@ -226,49 +225,55 @@ of images*/
 #porfolio-image1 {
     position: relative;
     float: left;
-    margin-left:20px;
-    margin-right: 20px;
-    width: 50%;
-    height: 200px;
-    width: 100px;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
 }
+
 
 #portfolio-image2 {
     position: relative;
     float: right;
-    clear: right;
-    height: 125px;
-    width: 125px;
+    /*clear: right;*/
+    height: auto;
+    width: 200px;
 }
 
 #porfolio-image3 {
     position: relative;
     float: left;   
     width: 200px;
-    height: 200px;
+    height: auto
 }
 
 #portfolio-image4 {
     position: relative;
     float: right;
-    clear: right;
-    margin-top:0;
-    margin-left: 0;
+    /*clear: right;*/
+    margin-top: 10px;
+    margin-right:25px;
+    width: 200px;
+    height: auto;
 }
 
 #portfolio-image5 {
     position: absolute;
     float: left;
-    clear: both;
-    margin-left: auto;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+    /*clear: both;
+    margin-left: auto;*/
 }
 
 .text-block {
     background: #4aaaa5;
     color: white; 
     text-align: center;
-    width: 125px;
-    position: relative;
+    width: 200px;
+    position: absolute;
     margin-right:0px;
     padding-right: 0px;
     padding-left: 0px;
@@ -276,7 +281,8 @@ of images*/
     border-right:0;
     height: 50px;
     bottom:20px;
-    right: 20px;
+    /*right: 20px;*/
+    border-bottom: 0;
 }
 
 
@@ -284,7 +290,7 @@ of images*/
     background: #4aaaa5;
     color: white; 
     text-align: center;
-    width: 125px;
+    width: 200px;
     position: relative;
     margin:0;
     padding: 0;
@@ -299,30 +305,30 @@ of images*/
     background: #4aaaa5;
     color: white; 
     text-align: center;
-    width: 125px;
+    width: 200px;
     position: relative;
-    margin:0;
+    margin-bottom:0;
     padding: 0;
     border-left: 0;
     border-right:0;
     height: 50px;
     bottom:20px;
-    right: 20px;
+    border-bottom: 0;
 }
 
 .text-block4 {
     background: #4aaaa5;
     color: white; 
     text-align: center;
-    width: 125px;
+    width: 200px;
     position: relative;
-    margin:0;
-    padding: 0;
+    margin-bottom:0;
+    padding-top: 0;
     border-left: 0;
     border-right:0;
     height: 50px;
     bottom:20px;
-    right: 20px;
+    border-bottom: 0;
 }
 
 
@@ -330,15 +336,15 @@ of images*/
     background: #4aaaa5;
     color: white; 
     text-align: center;
-    width: 125px;
+    width: 200px;
     position: relative;
-    margin:0;
-    padding: 0;
+    padding-top: 0px;
     border-left: 0;
     border-right:0;
     height: 50px;
     bottom:20px;
-    right: 20px;
+    border-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -379,26 +385,6 @@ of images*/
         text-align: center;
         align-content: center;
     }
-
-    /*#about {
-        padding-right: 20px;
-        padding-left: 150px;
-    }
-
-    #prtflio {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 20px;
-        padding-right: 20px;  
-    }
-
-    #contact {
-        border: none;
-        padding-left: 20px;
-        padding-right: 180px;
-        padding-bottom: 20px;
-
-    }*/
 
    #aboutme  {
        width: 95%;
@@ -504,85 +490,70 @@ of images*/
 }
 
 
-@media screen (max-width: 768px), (min-width: 641px) {
+@media screen and (max-width: 768px) and (min-width: 641px) {
     body {
         width: 100%;
     }
 
-    #topheader {
-    position: relative;
-    width: 100%;
-    background: #ffffff;
-    margin: 0;
-    padding-right: 20px;
-    align-self: auto;
-    }
 
    h1 {
         position: relative;
         width: 100%; 
-        /*padding: 0;
         float: left;
-        margin-left: 0;*/
+        margin-left: 0;
     }
 
-    /*#main-menu {
+    #main-menu {
         position: relative;
-        width: auto;
+        margin-left: 0px;
+        padding-left: 100px;
+        margin-right: 0px;
     }
 
-   /*#aboutme  {
-       width: 90%;
-       height: 60%;
-       margin-top: 20px;
-       align-content: center;
-       margin-bottom: 70px;
-       margin-left: 20px;
+    #logo {
+        margin-left: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom:90px;
+    }
+
+   #aboutme  {
+       width: 96%;
+       height: 40%;
+       margin-top: 30px;
+       margin-bottom: 90px;
+       margin-left: 15px;
        margin-right: 0px;
        justify-content: center;
-       position:relative;
     }
 
     p {
-        width: 90%;
+        width: 96%;
         height: 60%;
         justify-content: left;
     }
 
-    footer {
-        width: auto;
-        margin-right:0 ;
-        margin-right:0;
-        clear: both;
-    }
 
-    img {
-        width: 90%
-    } */
-
-
-   /* #portfolio  {
-        width: 80%;
+   #portfolio  {
+        width: 96%;
         height: 200%;
-        margin: auto auto;
+        margin-top: 30px;
  }
     #portfolio-image1 {
         width: 30%;
-        height: 40%;
+        max-height: 20%;
         margin: auto auto;
-        height: auto;
-        position: fixed;
+        position: relative;
     }
 
     #portfolio-image2 {
         width: 30%;
-        height: 40%;
+        max-height: 20%;
         margin: auto auto;
-        height: auto;
         position: relative;
     }
 
-    #portfolio-image3 {
+    /*#portfolio-image3 {
         width: 30%;
         height: 40%;
         margin: auto auto;
@@ -606,18 +577,36 @@ of images*/
         position: relative;
     }*/
 
-    /* #contact {
-        width: 100%;
+    #contact {
+        width: 96%;
         height: 120%;
         margin-top: 20px;
         align-content: center;
-        margin-bottom: 50px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-bottom: 60px;
         justify-content: center;
         position:relative;
-    } */
-/*}*/
+        padding-bottom: 20px;
+    } 
+
+    form {
+        height: 500px;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    input[type=text] {
+        margin-right: 0px;
+        width: 102%;
+    }
+
+    input[type=submit] {
+        width: 15%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
 
 
 /*@media screen and (max-width: 980px) {
